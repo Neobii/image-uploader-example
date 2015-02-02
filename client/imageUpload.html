@@ -1,0 +1,9 @@
+<template name="imageUpload">
+<h1>Add a person!</h1>
+{{> quickForm collection="People" id="insertPeopleForm" type="insert"}}
+<hr>
+<h1>Person List</h1>
+{{#each people}}
+<a href="{{pathFor 'person'}}">{{name}}</a>
+{{/each}}
+</template>
